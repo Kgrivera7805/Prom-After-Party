@@ -190,7 +190,7 @@
     // Function to check the date and reveal the address
     function checkDateAndReveal() {
       const today = new Date();
-      const revealDate = new Date("April 10, 2024 00:00:00"); // Updated to 2024
+      const revealDate = new Date("April 10, 2025 18:00:00"); // April 10, 2025 at 6:00 PM
 
       if (today >= revealDate) {
         // Reveal the address
@@ -198,17 +198,17 @@
         document.getElementById('address').innerHTML = "📍 The Secret Location: <strong>123 Hidden Lane, Mystic City</strong>";
         startConfetti(); // Start confetti animation
       } else {
-        // Show countdown to April 10
+        // Show countdown to April 10, 2025 at 6:00 PM
         startCountdown();
       }
     }
 
-    // Countdown Timer to April 10
+    // Countdown Timer to April 10, 2025 at 6:00 PM
     function startCountdown() {
       const countdownElement = document.getElementById('countdown');
       countdownElement.classList.remove('hidden');
 
-      const revealDate = new Date("April 10, 2024 00:00:00").getTime(); // Updated to 2024
+      const revealDate = new Date("April 10, 2025 18:00:00").getTime(); // April 10, 2025 at 6:00 PM
 
       const timer = setInterval(() => {
         const now = new Date().getTime();
